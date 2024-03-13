@@ -1878,3 +1878,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+.timeline-wrapper {
+  position: relative; /* Establishes the positioning context for the absolute positioning of children */
+}
+
+.right {
+  position: absolute;
+  left: 50%; /* Position to the right of the nearest positioned ancestor (timeline-wrapper) */
+  top: 0; /* Align to the top */
+}
+
+.span-container {
+  display: flex;
+  align-items: center;
+}
+
+.space {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+.space10 {
+  margin-right: 10px;
+}
+
+.logo {
+  height: 20px; /* Adjust the size of the logos as needed */
+  width: auto;
+}
+
+.project-link {
+  color: var(--light-gray-70);
+  font-size: 20px;
+}
